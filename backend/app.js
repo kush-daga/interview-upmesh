@@ -16,7 +16,7 @@ app.post('/free_trial',(req,res)=>{
     res.json({
         version:'1.0.0',
         courseNumber:'ucs305',
-        customerName:req.body.user
+        customerName:req.body.username
     })
 });
 
