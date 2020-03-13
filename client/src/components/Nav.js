@@ -1,6 +1,7 @@
 /** @format */
 import React, { Component } from "react";
 import styles from "./styles/nav.module.css";
+import { Link } from "react-router-dom";
 export default class Nav extends Component {
 	render() {
 		return (
@@ -8,28 +9,26 @@ export default class Nav extends Component {
 				<div className={styles.navContainer}>
 					<ul className={styles.navLinks}>
 						<li className={styles.navLink}>
-							<a href="https://github.com" className={styles.active}>
-								Home
+							<a className={styles.active}>
+								<Link to="/">Home</Link>
 							</a>
 						</li>
 						<li className={styles.navLink}>
-							<a href="https://github.com">Product</a>
+							<a>Product</a>
 						</li>
 						<li className={styles.navLink}>
-							<a href="https://github.com">Partner</a>
+							<a>Partner</a>
 						</li>
 						<li className={styles.navLink}>
-							<a href="https://github.com">Support</a>
+							<a>Support</a>
 						</li>
 						<li className={styles.navLink}>
-							<a href="https://github.com" className={styles.LoginButton}>
-								LOGIN
+							<a className={styles.LoginButton}>
+								<Link to="/login">LOGIN</Link>
 							</a>
 						</li>
 						<li className={styles.navLink}>
-							<a href="https://github.com" className={styles.trialButton}>
-								Free Trial
-							</a>
+							<a className={styles.trialButton}>Free Trial</a>
 						</li>
 					</ul>
 				</div>

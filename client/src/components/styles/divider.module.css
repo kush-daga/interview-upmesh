@@ -1,0 +1,31 @@
+/** @format */
+.dividerContainer {
+	margin-top: 50px;
+	display: flex;
+	background: #21bfda;
+	padding-top: 200px;
+	padding-bottom: 200px;
+	color: white;
+}
+.dividerContainer .buttonDivider a {
+	text-decoration: none;
+	color: white;
+	padding: 10px;
+	background: #f78c52;
+	border-radius: 10px;
+}
+.dividerContainer .buttonDivider {
+	margin-top: 50px;
+	display: flex;
+}
+.dividerDivider {
+	width: 60%;
+}
+.dividerContainer .dividerText {
+	font-size: 18px;
+	padding-right: 20px;
+}
+
+.dividerContainer .dividerText h1 {
+	font-weight: 400;
+}

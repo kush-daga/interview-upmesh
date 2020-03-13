@@ -1,0 +1,72 @@
+/** @format */
+* {
+	padding: 0;
+	margin: 0;
+}
+.featuresContainer {
+	margin: 0;
+	padding-top: 80px;
+	width: 70%;
+	margin: auto;
+	background: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.featuresContainer h1 {
+	color: #21bfda;
+	font-weight: 300;
+}
+.featuresContainer h3 {
+	/* color: #21bfda; */
+	font-weight: 300;
+}
+.featuresContainer img {
+	margin-top: 30px;
+}
+.featuresContainer .featuresGrid1 {
+	margin-top: 40px;
+	width: 80%;
+	display: flex;
+	justify-content: space-between;
+}
+.featuresContainer .featuresGrid1 h2 {
+	font-weight: 300;
+	color: #21bfda;
+}
+.featuresContainer .secondHeading {
+	color: black;
+	margin-top: 90px;
+}
+
+.featuresContainer .featuresGrid2 {
+	margin-top: 40px;
+	width: 80%;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.featuresContainer .featuresGrid2Text {
+	display: flex;
+	flex-direction: column;
+}
+.featuresContainer .featuresGrid2Text h2 {
+	font-weight: 300;
+	color: #21bfda;
+}
+.featuresContainer .featuresGrid2Text {
+	margin-bottom: 40px;
+}
+
+.featuresContainer .buttonFeatures a {
+	text-decoration: none;
+	color: white;
+	padding: 10px;
+	background: #f78c52;
+	border-radius: 10px;
+}
+.featuresContainer .buttonFeatures {
+	margin-top: 50px;
+	display: flex;
+}
