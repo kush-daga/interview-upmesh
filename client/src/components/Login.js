@@ -3,17 +3,29 @@ import React, { Component } from "react";
 import axios from "axios";
 export default class Login extends React.Component {
 	// Using a class based component here because we're accessing DOM refs
-	handleSignIn(e) {
+	async handleSignIn(e) {
 		e.preventDefault();
 		let username = this.refs.username.value;
 		let password = this.refs.password.value;
-        await axios.post("https://localhost:3000/free_trial", {
-            username: username,
-            password: password,
-            age: 18,
-        }).then((res) => {
-            console.log(res.JSON());
-        });
+		let data = {
+			username: username,
+			password,
+		};
+		fetch("http://localhost:5000/free_trial", {
+			method: "POST",
+			mode: "cors",
+			headers: {
+				"Content-Type": "application/json",
+				// 'Content-Type': 'application/x-www-form-urlencoded',
+			},
+			body: JSON.stringify(data),
+		})
+			.then(res => {
+				return res.json();
+			})
+			.then(json => {
+				console.log(json);
+			});
 	}
 
 	render() {
